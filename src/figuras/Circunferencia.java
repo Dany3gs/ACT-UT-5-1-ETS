@@ -1,4 +1,12 @@
 package figuras;
+/**
+ *Esta clase calcula el diámetro y el área de un círculo con el método imprimir,
+ * indicando también el color.
+ * Tiene otro método que compara los resultados con y sin decimales.
+ *
+ * @version 1.0
+ * @author dsmm
+ * */
 
 public class Circunferencia {
 	private double radio;
@@ -19,6 +27,10 @@ public class Circunferencia {
 	
 	
 	public void imprimir() {
+		
+		/**
+		 * Método para el cálculo
+		 * */
 		//String color = "rojo";
 		System.out.println("Di�metro: " + 2 * radio);
 		System.out.println("Color: " + color);
@@ -27,6 +39,10 @@ public class Circunferencia {
 	}
 	
 	public boolean esIgual(Circunferencia otro, boolean considerarDecimales) {
+		/**
+		 * Método para la comparación, se instancia en la clase Test
+		 * */
+		
 		double radio1 = this.radio;
 		double radio2 = otro.getRadio();
 		if (considerarDecimales) {
